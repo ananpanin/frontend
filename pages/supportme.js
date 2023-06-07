@@ -7,7 +7,7 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>itsyou</title>
+        <title>MyCats</title>
       </Head>
 
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -45,13 +45,22 @@ export default function index() {
   </div>
 </nav>
 
-<br></br>
-<center><h6>DESIGNED BY @YOULOVESK</h6></center>
-
 <div class="col">
           <div class="card shadow-sm">
-      <center><img src="/bg1.png" className="d-block w100" alt="..." width="72%" height="100%"/></center>   
-          </div>
+      <img src="/bg2.png" className="d-block w100" alt="..." width="1%" height="100%"/>       
+
+    <center><div classname="col-lg-4">
+      <img src="/sup.png" alt width="{140}" hanging="{140}" />
+      <h5 classname="fw-normal">---------------</h5>
+      <h3 classname="fw-normal">0988129256</h3>
+      <p>พร้อมเพย์</p>
+      <h5 classname="fw-normal">---------------</h5>
+      <h3 classname="fw-normal">020365736873</h3>
+      <p>ธนาคารออมสิน</p>
+    </div>
+    </center>
+
+</div>
 </div>
 
     </>
