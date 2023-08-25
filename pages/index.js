@@ -7,12 +7,12 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>itsyou</title>
+        <title>YLSK</title>
       </Head>
 
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <Link class="navbar-brand" href="/">itsyou</Link>
+    <Link class="navbar-brand" href="/">YLSK</Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,9 +25,7 @@ export default function index() {
           <Link class="nav-link active" aria-current="page" href="/about">เกี่ยวกับเรา</Link>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            บริการของเรา
-          </a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">บริการของเรา</a>
           <ul class="dropdown-menu">
           <li><Link class="dropdown-item" href="/contect">ติดต่อ</Link></li>
           </ul>
