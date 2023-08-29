@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from 'next/link';
 import { useRouter } from "next/router";
 
-export async function getStaticProps() {
-  const res = await fetch('https://13d5-184-82-26-219.ngrok-free.app/api/users')
+export async function getServerSideProps() {
+  const res = await fetch('https://cbf4-184-82-26-219.ngrok-free.app/api/users')
   const posts = await res.json();
 
   return {
@@ -21,22 +21,22 @@ export default function Component({ posts }) {
 
 const handleDelete = async (id) => {
    //console.log("ID : ", id);
-fetch('https://13d5-184-82-26-219.ngrok-free.app/api/users?id=' + id, {
+fetch('https://cbf4-184-82-26-219.ngrok-free.app/api/users?id=' + id, {
   method: 'DELETE',
 })
 return router.reload('/dashboard')
 }
-  if (session) {
+  //if (session) {
     return (
       <>
 
-<nav className="navbar navbar-light bg-warning">
+{/* <nav className="navbar navbar-light bg-warning">
   <div className="container-fluid">
   <div className="col">
   <div align="right"> Signed in as &nbsp;&nbsp;{session.user.email}&nbsp;&nbsp; {session.user.fname}&nbsp; {session.user.lname} <button  className="btn btn-danger" onClick={() => signOut()}>Sign out</button></div>
   </div>
   </div>
-</nav>
+</nav> */}
 <br></br>
 
         <div className="container">
@@ -100,10 +100,10 @@ return router.reload('/dashboard')
     )
   }
 
-  return (
-    <>
-      Not signed in <br />
-      <button onClick={() => signIn()}>Sign in</button>
-    </>
-  )
-}
+//   return (
+//     <>
+//       Not signed in <br />
+//       <button onClick={() => signIn()}>Sign in</button>
+//     </>
+//   )
+// }

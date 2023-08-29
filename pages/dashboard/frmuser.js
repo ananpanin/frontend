@@ -89,7 +89,7 @@ export default function Component({ posts }) {
     console.log("password:", jsonData.password);
     console.log("status:", jsonData.status);
 
-     fetch('https://13d5-184-82-26-219.ngrok-free.app/api/users', {
+     fetch('https://cbf4-184-82-26-219.ngrok-free.app/api/users', {
         method: 'POST', // or 'PUT'
         headers: {
           'Content-Type': 'application/json',
@@ -112,17 +112,17 @@ export default function Component({ posts }) {
 
   }; //end handleSubmit
 
-  if (session) {
+  // if (session) {
     return (
       <>
 
-<nav className="navbar navbar-light bg-warning">
+{/* <nav className="navbar navbar-light bg-warning">
   <div className="container-fluid">
   <div className="col">
   <div align="right"> Signed in as {session.user.email} {session.user.fname} {session.user.lname} <button  className="btn btn-danger" onClick={() => signOut()}>Sign out</button></div>
   </div>
   </div>
-</nav>
+</nav> */}
 <br></br>
 <div className="card mx-auto" style={{ width: "1250px" }}>
       <div className="card-header">
@@ -200,10 +200,10 @@ export default function Component({ posts }) {
     )
   }
 
-  return (
-    <>
-      Not signed in <br />
-      <button onClick={() => signIn()}>Sign in</button>
-    </>
-  )
-}
+//   return (
+//     <>
+//       Not signed in <br />
+//       <button onClick={() => signIn()}>Sign in</button>
+//     </>
+//   )
+// }
